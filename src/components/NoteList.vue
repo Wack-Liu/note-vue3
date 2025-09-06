@@ -63,9 +63,14 @@ const toggleComplete = (id) => {
 
 <style scoped>
 .note-container {
-  max-width: 1200px;
+  width: 390px;
+  min-height: 624px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow-y: auto;
 }
 
 .note-header {
@@ -75,14 +80,14 @@ const toggleComplete = (id) => {
 
 .note-header h1 {
   color: #ff9800;
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .add-note {
   display: flex;
-  gap: 1rem;
-  max-width: 600px;
+  gap: 0.8rem;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -123,10 +128,11 @@ const toggleComplete = (id) => {
 }
 
 .notes-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
 }
 
 .note-card {

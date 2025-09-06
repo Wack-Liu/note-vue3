@@ -17,12 +17,19 @@ import NoteList from './components/NoteList.vue'
 }
 
 body {
-  background-color: #fafafa;
+  background-color: #f5f5f5;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .app {
   min-height: 100vh;
-  padding: 2rem 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
 }
 </style>
